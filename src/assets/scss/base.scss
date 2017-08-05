@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+$main-color:#444b70;
+$second-color:#f3a713;
+$main-dark-color:#393f5d;
+$main-light-color:#8a96d4;
+
+
+.main-color{
+  color: $main-color;
+}
+.main-light-color{
+  color: $main-light-color;
+}
+.main-dark-color{
+  color: $main-dark-color;
+}
+.second-color{
+  color: $second-color;
+}
+.second-color-overlay{
+  background-color: rgba(240,165,19,0.9);
+}
+
+.main-color-bg{
+  background-color: $main-color;
+}
+.main-light-color-bg{
+  background-color: $main-light-color;
+}
+.main-dark-color-bg{
+  background-color: $main-dark-color;
+}
+.second-color-bg{
+  background-color: $second-color;
+}
+
+input,input:hover,input:focus,input:active,
+a,a:hover,a:focus,a:active,
+button,button:hover,button:focus,button:active{
+  outline: none;
+}
+
+.overlay{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
