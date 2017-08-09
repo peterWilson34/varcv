@@ -47,3 +47,22 @@ button,button:hover,button:focus,button:active{
   width: 100%;
   height: 100%;
 }
+
+.varcv-btn{
+  border:3px solid #fff;
+  border-radius: 50px;
+  padding: 10px 30px;
+  background: transparent;
+  color: #fff;
+  &.main-color{
+    border-color: $main-color;
+    color: $main-color;
+  }
+  &.second-color{
+    border-color: $second-color;
+    background-color: $second-color;
+  }
+}
+.position-relative{
+  position: relative;
+}
