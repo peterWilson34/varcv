@@ -1,3 +1,86 @@
-<!-- Home Page -->
-<!-- Footer -->
-<app-home></app-home>
+<nav >
+  <div>
+  <div id="mySidenav" class="sidenav" [ngStyle]="{width:isMenuOpened?'250px':0}">
+    <a href="javascript:void(0)" (click)="menuToggle()" class="closebtn" >&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+  <div class="container pt-2 pb-2">
+    <div class="row jus">
+      <div class="col text-left">
+        <img src="assets/images/logo.png" alt="" routerLink="/" class="logo pointer">
+      </div>
+      <div class="col text-right">
+        <a routerLink="/login" class="mr-3">Login</a>
+        <a routerLink="/signup" class="mr-3">Signup</a>
+        <img src="assets/images/menu.png" alt="" class="d-inline-block pointer" (click)="menuToggle()">
+      </div>
+    </div>
+
+  </div>
+  </div>
+</nav>
+
+
+
+<main>
+  <router-outlet></router-outlet>
+
+</main>
+
+
+
+<section class="newsteller second-color-bg pt-5 pb-5">
+  <div class="second-color-overlay overlay"></div>
+  <div class="container">
+    <h1 class="mb-5">Newsteller</h1>
+    <div class="row">
+      <form class="col-sm-6 offset-sm-3">
+        <input type="text" name="" class="mb-3" placeholder="Email Address" value="">
+        <button type="button" name="button">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+<footer class="pt-5 ">
+  <div class="container pb-5">
+    <div class="row">
+      <div class="col-sm-4">
+        <h3 class="mb-5">ABOUT</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed  eismod tempor incididunt ut labore et dolor magna aliqua. Ut enim ad minim veniam, quis nostrud exation ullamco laboris nisi ut aliquip ex ea commodo consquat. Duis aute irure dolor in reprnderit in voluptate velit
+        </p>
+        <ul>
+          <li class="mr-3"><a href=""><i class="fa fa-facebook"></i></a></li>
+          <li class="mr-3"><a href=""><i class="fa fa-twitter"></i></a></li>
+          <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+      <div class="col-sm-8">
+        <h3 class="mb-5">USEFUL LINKS</h3>
+        <div class="row">
+          <div class="col-sm-3"><p><i class="fa fa-angle-right mr-2 second-color"></i><a href="">Learn HTML</a></p></div>
+          <div class="col-sm-3"><p><i class="fa fa-angle-right mr-2 second-color"></i><a href="">Learn CSS3</a></p></div>
+          <div class="col-sm-3"><p><i class="fa fa-angle-right mr-2 second-color"></i><a href="">Learn JavaScript</a></p></div>
+          <div class="col-sm-3"><p><i class="fa fa-angle-right mr-2 second-color"></i><a href="">Learn AngularJs</a></p></div>
+          <div class="col-sm-3"><p><i class="fa fa-angle-right mr-2 second-color"></i><a href="">Learn PHP</a></p></div>
+          <div class="col-sm-3"><p><i class="fa fa-angle-right mr-2 second-color"></i><a href="">Learn Laravel</a></p></div>
+          <div class="col-sm-3"><p><i class="fa fa-angle-right mr-2 second-color"></i><a href="">Learn Angular 4</a></p></div>
+          <div class="col-sm-3"><p><i class="fa fa-angle-right mr-2 second-color"></i><a href="">Learn React Native</a></p></div>
+          <div class="col-sm-3"><p><i class="fa fa-angle-right mr-2 second-color"></i><a href="">Learn MySQL</a></p></div>
+          <div class="col-sm-3"><p><i class="fa fa-angle-right mr-2 second-color"></i><a href="">Learn APS.NET</a></p></div>
+          <div class="col-sm-3"><p><i class="fa fa-angle-right mr-2 second-color"></i><a href="">Learn NodeJs</a></p></div>
+          <div class="col-sm-3"><p><i class="fa fa-angle-right mr-2 second-color"></i><a href="">Learn Symphony</a></p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright pt-2 pb-2">
+    <div class="container d-table">
+      <img class="d-table-cell" src="assets/images/logo.png" alt="">
+      <p class="d-table-cell">Copyright (c) 2017 Copyright <span class="second-color">VARCV</span> All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>

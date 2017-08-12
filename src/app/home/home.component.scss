@@ -1,80 +1,5 @@
 @import "../../assets/scss/base";
-footer{
-  background-color: $main-color;
-  h3{
-    color: #fff;
-  }
-  p{
-    color: $main-light-color;
-  }
-  a{
-    color: $main-light-color;
-    text-decoration: none;
-    transition: all ease-in-out 500ms;
 
-  }
-  a:hover{
-    color: $second-color;
-    transition: all ease-in-out 500ms;
-  }
-  ul{
-    padding: 0;
-    li{
-      display: inline-block;
-
-    }
-  }
-  .copyright{
-    background-color: $main-dark-color;
-    p{
-      vertical-align: middle;
-      font-size: 12px;
-      text-align: right;
-    }
-  }
-}
-section.newsteller{
-  background-image: url('../../assets/images/newsteller.png');
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: bottom center;
-  position: relative;
-  h1{
-    text-align: center;
-    color: #fff;
-  }
-  input{
-    display: block;
-    background: transparent;
-    color: #fff;
-    border: 5px solid #fff;
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-
-  }
-  button{
-    width: 100%;
-    background-color: #fff;
-    color: $main-dark-color;
-    border: 5px solid #fff;
-    padding: 10px;
-    cursor: pointer;
-  }
-  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: #fff;
-  }
-  ::-moz-placeholder { /* Firefox 19+ */
-    color: #fff;
-  }
-  :-ms-input-placeholder { /* IE 10+ */
-    color: #fff;
-  }
-  :-moz-placeholder { /* Firefox 18- */
-    color: #fff;
-  }
-
-}
 
 section.stats{
   .feedback{
@@ -245,11 +170,7 @@ section.how{
   }
 }
 header{
-  nav{
-    position: absolute;
-    width: 100%;
 
-  }
   >.logo-light{
   position: absolute;
   top:100px;
@@ -265,13 +186,12 @@ header{
     text-align: center;
     align-items: center;
 
-    >.col-:last-of-type{
+    >.col-sm-6:last-of-type{
       background-color: rgba(243,167,19,0.4);
     }
-    .col-{
-      min-height: 100vh;
-      flex:0 1 50%;
-    }
+    .col-sm-6{
+      min-height: calc(100vh - 78px);
+      }
 
   }
   h1{

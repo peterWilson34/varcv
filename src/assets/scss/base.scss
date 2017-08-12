@@ -3,8 +3,11 @@ $main-color:#444b70;
 $second-color:#f3a713;
 $main-dark-color:#393f5d;
 $main-light-color:#8a96d4;
+$bg-color:#e4e8f9;
 
-
+.bg-color{
+  background-color: $bg-color;
+}
 .main-color{
   color: $main-color;
 }
@@ -36,7 +39,7 @@ $main-light-color:#8a96d4;
 
 input,input:hover,input:focus,input:active,
 a,a:hover,a:focus,a:active,
-button,button:hover,button:focus,button:active{
+button,button:hover,button:focus,button:active,img{
   outline: none;
 }
 
@@ -66,3 +69,12 @@ button,button:hover,button:focus,button:active{
 .position-relative{
   position: relative;
 }
+img{
+  max-width: 100%;
+}
+.pointer{
+  cursor: pointer;
+}
+// main{
+//   padding-top: 78px;
+// }

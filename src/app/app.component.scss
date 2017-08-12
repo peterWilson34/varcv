@@ -1,1 +1,177 @@
+@import "../assets/scss/base";
 
+footer{
+  background-color: $main-color;
+  h3{
+    color: #fff;
+  }
+  p{
+    color: $main-light-color;
+  }
+  a{
+    color: $main-light-color;
+    text-decoration: none;
+    transition: all ease-in-out 500ms;
+
+  }
+  a:hover{
+    color: $second-color;
+    transition: all ease-in-out 500ms;
+  }
+  ul{
+    padding: 0;
+    li{
+      display: inline-block;
+
+    }
+  }
+  .copyright{
+    background-color: $main-dark-color;
+    p{
+      vertical-align: middle;
+      font-size: 12px;
+      text-align: right;
+    }
+  }
+}
+section.newsteller{
+  background-image: url('../assets/images/newsteller.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom center;
+  position: relative;
+  h1{
+    text-align: center;
+    color: #fff;
+  }
+  input{
+    display: block;
+    background: transparent;
+    color: #fff;
+    border: 5px solid #fff;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+
+  }
+  button{
+    width: 100%;
+    background-color: #fff;
+    color: $main-dark-color;
+    border: 5px solid #fff;
+    padding: 10px;
+    cursor: pointer;
+  }
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #fff;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: #fff;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: #fff;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: #fff;
+  }
+
+}
+.header{
+  background-color: $main-color;
+  .wrapper{
+    padding-top: 78px;
+    background-image: url('../assets/images/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top  center;
+    p{
+      color: #fff;
+      margin: 0;
+      text-align: center;
+    }
+    h2{
+      color: $second-color;
+    }
+  }
+  border-bottom: 5px solid $second-color;
+}
+nav{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    >div{
+
+      text-align: center;
+      align-items: center;
+    }
+  a{
+    color: #fff;
+    position: relative;
+    z-index: 999;
+    line-height: 60px;
+    &:hover,
+    &:focus,
+    &:active
+    {
+      color: $second-color;
+      text-decoration: none;
+    }
+  }
+  img{
+    position: relative;
+    z-index: 999;
+  }
+}
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Stay on top */
+    top: 0;
+    right: -2px;
+    background-color: $second-color; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    border-left: 2px solid $main-color;
+    padding-top: 60px; /* Place content 60px from the top */
+    transition:all ease-in-out 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    &.opened{
+      width: auto;
+      transition:all ease-in-out 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+
+
+    }
+    /* The navigation menu links */
+     a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: $main-dark-color;
+      display: block;
+      transition: 0.3s
+    }
+
+    /* When you mouse over the navigation links, change their color */
+     a:hover, .offcanvas a:focus{
+      color: #f1f1f1;
+    }
+
+    /* Position and style the close button (top right corner) */
+     .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+}
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}

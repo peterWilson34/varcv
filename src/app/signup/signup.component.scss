@@ -1,0 +1,53 @@
+form{
+  background-color: #fff;
+  width: 500px;
+  height: 500px;
+  padding: 25px;
+  border-radius: 50%;
+  display: table;
+  text-align: center;
+  margin: 0 auto;
+  input{
+    background-color: #efefef;
+    border-radius: 50px;
+    border:0;
+    display: inline-block;
+    width: 350px;
+    padding:  15px;
+    padding-right: 35px;
+  }
+  button{
+    width: 350px;
+    display: block;
+    margin: 0 auto;
+    &.linkedin{
+      background-color: #0077b5;
+      width: 300px;
+      margin: 0 auto;
+    }
+  }
+  a{
+    color: #6d6d6d;
+  }
+  .position-relative i{
+    position: absolute;
+    color: #6d6d6d;
+    right: 35px;
+    top: 12px;
+    opacity: 0.4;
+  }
+
+  >div{
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+@media all and (max-width:500px){
+  form{
+    width: 100%;
+    border-radius: 0;
+    input,button{
+      width: 100%;
+    }
+  }
+}
