@@ -1,0 +1,56 @@
+@import "../../assets/scss/base";
+
+.list-group{
+  li{
+    background-color: $main-color;
+    color: #fff;
+    border-left: 0;
+    border-right: 0;
+    border-color: $main-light-color;
+    &.active{
+      background-color: $main-dark-color;
+      color: $second-color;
+      border:0;
+    }
+  }
+}
+
+form .cv{
+  background: #fff;
+  border-bottom: 3px solid $second-color;
+  border-radius: 5px;
+  min-height: 500px;
+  .input {
+    i{
+      position: absolute;
+      right: 10px;
+      top:9px;
+      color: $main-color;
+    }
+    input,select,textarea{
+      width: 100%;
+      background-color: #f0f0f0;
+      border-radius: 3px;
+      border: 0;
+      padding: 5px 10px;
+      color: $main-dark-color;
+      height: 34px;
+    }
+    textarea{
+      height: 100px;
+      resize: none;
+    }
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: $main-light-color;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+      color: $main-light-color;
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+      color: $main-light-color;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+      color: $main-light-color;
+    }
+  }
+}

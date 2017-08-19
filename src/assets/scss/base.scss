@@ -7,6 +7,25 @@ $bg-color:#e4e8f9;
 
 .bg-color{
   background-color: $bg-color;
+  position: relative;
+  .container{
+    position: relative;
+    z-index: 1;
+  }
+  &::after{
+    content: '';
+    background-image: url('/assets/images/logo-light.png');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: contain;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    opacity: 0.3;
+  }
 }
 .main-color{
   color: $main-color;
@@ -39,7 +58,8 @@ $bg-color:#e4e8f9;
 
 input,input:hover,input:focus,input:active,
 a,a:hover,a:focus,a:active,
-button,button:hover,button:focus,button:active,img{
+button,button:hover,button:focus,button:active,img,
+.list-group-item,.list-group-item:hover,.list-group-item:focus,.list-group-item:active{
   outline: none;
 }
 
@@ -75,6 +95,7 @@ img{
 .pointer{
   cursor: pointer;
 }
-// main{
-//   padding-top: 78px;
-// }
+
+.xl-mb{
+  margin-bottom: 120px;
+}

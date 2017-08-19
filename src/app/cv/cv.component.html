@@ -1,0 +1,31 @@
+<div class="header">
+  <div class="wrapper ">
+    <div class="container">
+      <p>VAR CV</p>
+      <h2 class="text-center pb-4 mb-0">My CV</h2>
+    </div>
+  </div>
+</div>
+<div class="bg-color pt-5 pb-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <ul class="list-group  ">
+          <li class="list-group-item pointer" routerLink="personal-info" routerLinkActive="active"><i class="fa fa-id-card-o mr-3"></i> <span>Personal Info</span></li>
+          <li class="list-group-item pointer" routerLink="languages" routerLinkActive="active"><i class="fa fa-language mr-3"></i> <span>Languages</span></li>
+          <li class="list-group-item pointer" routerLink="technical-skills" routerLinkActive="active"><i class="fa fa-sliders mr-3"></i> <span>Technical Skills</span></li>
+          <li class="list-group-item pointer" routerLink="education" routerLinkActive="active"><i class="fa fa-graduation-cap mr-3"></i> <span>Education</span></li>
+          <li class="list-group-item pointer" routerLink="work-experience" routerLinkActive="active"><i class="fa fa-briefcase mr-3"></i> <span>Work Experience</span></li>
+          <li class="list-group-item pointer" routerLink="objectives" routerLinkActive="active"><i class="fa fa-bullseye mr-3"></i> <span>Objectives</span></li>
+          <li class="list-group-item pointer" routerLink="courses" routerLinkActive="active"><i class="fa fa-book mr-3"></i> <span>Courses</span></li>
+          <li class="list-group-item pointer" routerLink="template" routerLinkActive="active"><i class="fa fa-file mr-3"></i> <span>CV Template</span></li>
+
+        </ul>
+      </div>
+      <div class="col-sm-9">
+        <router-outlet></router-outlet>
+      </div>
+
+    </div>
+  </div>
+</div>
